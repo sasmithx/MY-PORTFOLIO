@@ -304,12 +304,12 @@ header {
   padding: 15px;
   background: var(--container-color);
   border-radius: 0.4rem;
-  transition: 0.5s all cubic-bezier(0.075,0.82,0.165,1);
+  transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.services-box:hover{
-    transform: scale(1.05);
-    transition: 0.5s all cubic-bezier(0.075,0.82,0.165,1);
+.services-box:hover {
+  transform: scale(1.05);
+  transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .services-box .bx {
@@ -320,15 +320,74 @@ header {
   border: 2px dashed var(--bg-color);
 }
 
-.services-box h2{
-    font-size: 1.1rem;
-    font-weight: 500;
-    margin: 0.5rem 0;
-    color: var(--main-color);
+.services-box h2 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0.5rem 0;
+  color: var(--main-color);
 }
 
-.services-box p{
-    font-size: 0.9rem;
+.services-box p {
+  font-size: 0.9rem;
+}
+
+/* Portfolio */
+
+.portfolio-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.portfolio-box {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.portfolio-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.portfolio-overlay{
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: hsl(234,45%,16%,0.7);
+}
+
+.portfolio-overlay h2{
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.portfolio-overlay .bx{
+    font-size: 24px;
+    padding: 10px;
+    background: var(--main-color);
+    color: var(--bg-color);
+    border-radius: 4;
+}
+
+.portfolio-overlay .bx:hover{
+    background: #546eff;
+    transition: 0.3s all linear;
 }
 
 
+.portfolio-box:hover .portfolio-overlay{
+    top: 0;
+    transition: 0.3s all ease ;
+}
