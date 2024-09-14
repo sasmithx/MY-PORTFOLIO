@@ -354,40 +354,63 @@ header {
   object-position: center;
 }
 
-.portfolio-overlay{
-    position: absolute;
-    top: -100%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: hsl(234,45%,16%,0.7);
+.portfolio-overlay {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: hsl(234, 45%, 16%, 0.7);
 }
 
-.portfolio-overlay h2{
-    font-size: 1.6rem;
-    font-weight: 600;
-    margin-bottom: 10px;
+.portfolio-overlay h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
-.portfolio-overlay .bx{
-    font-size: 24px;
-    padding: 10px;
-    background: var(--main-color);
-    color: var(--bg-color);
-    border-radius: 4;
+.portfolio-overlay .bx {
+  font-size: 24px;
+  padding: 10px;
+  background: var(--main-color);
+  color: var(--bg-color);
+  border-radius: 4;
 }
 
-.portfolio-overlay .bx:hover{
-    background: #546eff;
-    transition: 0.3s all linear;
+.portfolio-overlay .bx:hover {
+  background: #546eff;
+  transition: 0.3s all linear;
 }
 
+.portfolio-box:hover .portfolio-overlay {
+  top: 0;
+  transition: 0.3s all ease;
+}
 
-.portfolio-box:hover .portfolio-overlay{
-    top: 0;
-    transition: 0.3s all ease ;
+/* Projects */
+
+.projects-content {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.project-box{
+    padding: 20px 10px;
+    background: var(--box-color);
+    border-radius: 0.4rem;
+    text-align: center;
+}
+
+.project-box h2{
+    font-size: 1.2rem;
+}
+
+.project-box span{
+    font-size: 0.845rem;
 }
