@@ -16,7 +16,7 @@
   --main-color: #647bff;
   --body-color: #090a1a;
   --container-color: #171b3c;
-  --heading-color: #222321;
+  --heading-color: #222231;
   --box-color: #0d0f26;
   --bg-color: #fff;
 }
@@ -208,8 +208,8 @@ header {
   margin-bottom: 1.5rem;
 }
 
-.home-text .color{
-    color: var(--main-color);
+.home-text .color {
+  color: var(--main-color);
 }
 
 .social {
@@ -218,15 +218,72 @@ header {
   column-gap: 0.5rem;
 }
 
-.social .bx{
-    font-size: 1.3rem;
-    padding: 10px;
-    border-radius: 50%;
-    color: var(--bg-color);
-    background: var(--container-color);
+.social .bx {
+  font-size: 1.3rem;
+  padding: 10px;
+  border-radius: 50%;
+  color: var(--bg-color);
+  background: var(--container-color);
 }
 
-.social .bx:hover{
-    background: var(--main-color);
-    transition: 0.3s all linear;
+.social .bx:hover {
+  background: var(--main-color);
+  transition: 0.3s all linear;
+}
+
+/* Heading */
+.heading {
+  font-size: 5rem;
+  text-transform: uppercase;
+  color: var(--heading-color);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.about-data span {
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+
+.about-data h2 {
+  font-size: 2rem;
+  line-height: 2.6rem;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+.btn {
+  font-size: 0.97rem;
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  color: var(--bg-color);
+  background: var(--main-color);
+  padding: 12px 16px;
+  border-radius: 0.4rem;
+  margin-top: 1rem;
+}
+
+.btn .bx {
+  font-size: 1.2rem;
+}
+
+.btn:hover {
+  background: #546eff;
+  transition: 0.3s all linear;
+}
+
+.about-text p{
+    font-size: 0.938rem;
+    letter-spacing: 1px;
+    text-align: justify;
+    margin-bottom: 1.5rem;
 }
