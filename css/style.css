@@ -414,3 +414,76 @@ header {
 .project-box span{
     font-size: 0.845rem;
 }
+
+/* Reviews */
+.reviews{
+  max-width: 750px;
+  margin: auto;
+  width: 100%;
+}
+
+.review-box{
+  max-width: 550px;
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 3.5rem !important;
+}
+
+.review-box .bx{
+  font-size: 2rem;
+  color: var(--main-color);
+  margin-bottom: 0.5rem;
+}
+
+.review-box .review-text{
+  font-size: 0.89rem;
+  margin-bottom: 1rem;
+}
+
+.review-profile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.review-profile h2{
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+  color: var(--main-color);
+  font-weight: 600;
+}
+
+.review-profile span{
+  font-size: 0.84rem;
+  margin: 0.5rem 0 0.7rem;
+}
+
+.review-box img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 4px;
+  border: 2px solid var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+  object-position: center;
+}
+
+.swiper-pagination-bullet{
+  width: 6px !important;
+  height: 6px !important;
+  border-radius: 0.2rem !important;
+  background: var(--bg-color) !important;
+  opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active{
+  width: 1.5rem !important;
+  background: var(--main-color) !important;
+}
