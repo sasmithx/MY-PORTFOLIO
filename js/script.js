@@ -1,9 +1,14 @@
-let menu = document.querySelector('.menu-icon');
+let menu = document.querySelector(".menu-icon");
+let navbar = document.querySelector(".navbar");
 
 menu.onclick = () => {
-    menu.classList.toggle("move");
+  navbar.classList.toggle("open-menu");
+  menu.classList.toggle("move");
 };
-
+window.onscroll = () => {
+  navbar.classList.remove("open-menu");
+  menu.classList.remove("move");
+};
 
 // Reviews Swipper
 
@@ -23,24 +28,24 @@ var swiper = new Swiper(".reviews-content", {
 // Email Js
 
 function validate() {
-  let name = document.querySelector('.name')
+  let name = document.querySelector(".name");
   let email = document.querySelector(".email");
   let msg = document.querySelector(".message");
   let sendBtn = document.querySelector(".send-btn");
 
-  sendBtn.addEventListener('click', (e) => {
+  sendBtn.addEventListener("click", (e) => {
     e.preventDefault();
-    if (name.value == "" || email.value == "'" || msg.value == ""){
+    if (name.value == "" || email.value == "'" || msg.value == "") {
       emptyerror();
-    } else{
-      sendmail (name.value, email.value, msg,value);
+    } else {
+      sendmail(name.value, email.value, msg, value);
       success();
     }
   });
 }
 validate();
 
-function sendmail(name,email,msg){
+function sendmail(name, email, msg) {
   emailjs.send("service_rpwcxk1", "template_4jmb3rd", {
     to_name: name,
     from_name: email,
@@ -64,14 +69,12 @@ function success() {
   });
 }
 
-
 // Header Background Change On Scroll
-let header = document.querySelector('header');
+let header = document.querySelector("header");
 
-window.addEventListener('scroll', () => {
-  header.classList.toggle('header-active', window.scrollY > 0);
+window.addEventListener("scroll", () => {
+  header.classList.toggle("header-active", window.scrollY > 0);
 });
-
 
 // Scroll Top
 let scrollTop = document.querySelector(".scroll-top");
