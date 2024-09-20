@@ -487,3 +487,39 @@ header {
   width: 1.5rem !important;
   background: var(--main-color) !important;
 }
+
+
+/* Contact Form */
+.contact-form{
+  max-width: 600px;
+  margin: auto;
+  width: 100%;
+  display: grid;
+  row-gap: 1rem;
+}
+
+.contact-form input,.contact-form textarea{
+  border: none;
+  outline: none;
+  font-size: 0.9rem;
+  padding: 15px;
+  color: var(--bg-color);
+  background: var(--box-color);
+  border-radius: 0.4rem;
+}
+
+.contact-form .send-btn{
+  width: 120px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 12px;
+  background: var(--main-color);
+  cursor: pointer;
+}
+
+.contact-form .send-btn:hover{
+  background: #546eff;
+  transition: 0.3s all linear;
+}

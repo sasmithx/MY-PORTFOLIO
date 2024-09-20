@@ -247,6 +247,32 @@
               <div class="swiper-pagination"></div>
           </div>
       </section> 
+
+      <!-- Contact Form -->
+       <section class="contact container" id="contact">
+        <!-- Heading -->
+         <h2 class="heading">CONTACT</h2>
+         <!-- Contact Form -->
+          <form action="" class="contact-form" id="contact-form">
+            <input type="text" placeholder="Your Name" class="name" required>
+            <input type="email" name="" id="" placeholder="Email address..." class="email" required>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Write message here..." class="message" required></textarea>
+            <input type="submit" value="Send" class="send-btn">
+          </form>
+       </section>
+
+    <!-- Email Js Link    -->
+     <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+     </script>
+      <script type="text/javascript">
+        (function(){
+          emailjs.init("service_rpwcxk1");
+       })();
+      </script>
+
+      <!-- Sweet Alert Link -->
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> 
     
     <!-- Link Swiper JS   -->
     <script src="js/swiper-bundle.min.js"></script>
